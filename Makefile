@@ -6,7 +6,7 @@
 #    By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/30 11:55:59 by edegarci          #+#    #+#              #
-#    Updated: 2024/06/06 12:58:51 by edegarci         ###   ########.fr        #
+#    Updated: 2024/06/06 15:17:55 by edegarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ all: $(NAME)
 	@$(CC) $(CCFLAGS) -c -o $@ $<
 
 clean:
-	@echo "Remove .o  ..."
+	@echo "Remove .o ..."
 	@$(RM) $(OBJS)
 	@echo "Done!"
 

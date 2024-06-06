@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 12:35:55 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/06 12:58:26 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 14:04:25 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,13 @@ int	ft_putnbr(int n)
 
 int	ft_putptr(void *ptr)
 {
-	unsigned long long	addr;
-	int					len;
+	unsigned long	addr;
+	int				len;
 
-	addr = (unsigned long long)ptr;
+	addr = (unsigned long)ptr;
 	len = 0;
+	if (!ptr)
+		return (ft_putstr("(nil)"));
 	len += ft_putstr("0x");
 	len += ft_putnbr_base(addr, "0123456789abcdef");
 	return (len);

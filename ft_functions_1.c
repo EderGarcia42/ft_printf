@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 12:27:51 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/06 12:58:26 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 14:01:54 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_putchar(char c)
 	return (1);
 }
 
-int	ft_putnbr_base(unsigned int n, char *base)
+int	ft_putnbr_base(unsigned long n, char *base)
 {
 	int				len;
 	unsigned int	base_len;

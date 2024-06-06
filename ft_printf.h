@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 11:51:25 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/06 12:58:24 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 14:11:56 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <stddef.h>
 
 int			ft_putchar(char c);
-int			ft_putnbr_base(unsigned int n, char *base);
+int			ft_putnbr_base(unsigned long n, char *base);
 int			ft_putnbr_unsigned(unsigned int n);
 int			ft_putnbr(int n);
 int			ft_putptr(void *ptr);

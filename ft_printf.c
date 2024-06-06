@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 12:03:24 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/06 13:05:56 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:16:34 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,28 +60,38 @@ int	ft_printf(const char *str, ...)
 /* int	main(void)
 {
 	char			c = 'A';
-	char			*str = "Esta vez funcionará!";
-	void			*ptr = &c;
+	char			*str = '\0';
+	void			*ptr = '\0';
 	int				d = 777;
 	int				i = -777;
-	unsigned int	u = 7777;
+	unsigned int	u = -7777;
 	unsigned int	x = 255;
 	unsigned int	X = 255;
+
 	// Caracteres individuales
-	ft_printf("Caracter: %c\n", c);
+	printf("%d\n", ft_printf("Caracter: %c\n", c));
+	printf("%d\n", printf("Caracter: %c\n", c));
 	// Cadenas
-	ft_printf("Cadena: %s\n", str);
+	printf("%d\n", ft_printf("Cadena: %s\n", str));
+	printf("%d\n", printf("Cadena: %s\n", str));
 	// Punteros
-	ft_printf("Puntero: %p\n", ptr);
+	printf("%d\n", ft_printf("Puntero: %p\n", ptr));
+	printf("%d\n", printf("Puntero: %p\n", ptr));
 	// Enteros
-	ft_printf("Entero (d): %d\n", d);
-	ft_printf("Entero (i): %i\n", i);
+	printf("%d\n", ft_printf("Entero (d): %d\n", d));
+	printf("%d\n", ft_printf("Entero (i): %i\n", i));
+	printf("%d\n", printf("Entero (d): %d\n", d));
+	printf("%d\n", printf("Entero (i): %i\n", i));
 	// Enteros sin signo
-	ft_printf("Entero sin signo: %u\n", u);
+	printf("%d\n", ft_printf("Entero sin signo: %u\n", u));
+	printf("%d\n", printf("Entero sin signo: %u\n", u));
 	// Enteros hexadecimales
-	ft_printf("Hexadecimal (x): %x\n", x);
-	ft_printf("Hexadecimal en mayúsculas (X): %X\n", X);
+	printf("%d\n", ft_printf("Hexadecimal (x): %x\n", x));
+	printf("%d\n", ft_printf("Hexadecimal en mayúsculas (X): %X\n", X));
+	printf("%d\n", printf("Hexadecimal (x): %x\n", x));
+	printf("%d\n", printf("Hexadecimal en mayúsculas (X): %X\n", X));
 	// Símbolo de porcentaje
-	ft_printf("Porcentaje: %%\n");
+	printf("%d\n", ft_printf("Porcentaje: %%\n"));
+	printf("%d\n", printf("Porcentaje: %%\n"));
 	return (0);
 } */
