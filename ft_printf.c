@@ -6,7 +6,7 @@
 /*   By: edegarci <edegarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 12:03:24 by edegarci          #+#    #+#             */
-/*   Updated: 2024/06/06 13:02:09 by edegarci         ###   ########.fr       */
+/*   Updated: 2024/06/06 13:05:56 by edegarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,21 +67,21 @@ int	ft_printf(const char *str, ...)
 	unsigned int	u = 7777;
 	unsigned int	x = 255;
 	unsigned int	X = 255;
-	// Prueba de caracteres individuales
+	// Caracteres individuales
 	ft_printf("Caracter: %c\n", c);
-	// Prueba de cadenas
+	// Cadenas
 	ft_printf("Cadena: %s\n", str);
-	// Prueba de punteros
+	// Punteros
 	ft_printf("Puntero: %p\n", ptr);
-	// Prueba de enteros
+	// Enteros
 	ft_printf("Entero (d): %d\n", d);
 	ft_printf("Entero (i): %i\n", i);
-	// Prueba de enteros sin signo
+	// Enteros sin signo
 	ft_printf("Entero sin signo: %u\n", u);
-	// Prueba de enteros hexadecimales
+	// Enteros hexadecimales
 	ft_printf("Hexadecimal (x): %x\n", x);
 	ft_printf("Hexadecimal en mayúsculas (X): %X\n", X);
-	// Prueba del símbolo de porcentaje
+	// Símbolo de porcentaje
 	ft_printf("Porcentaje: %%\n");
 	return (0);
 } */
